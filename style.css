@@ -1,0 +1,450 @@
+* {
+	box-sizing:border-box;
+}
+
+body {
+	background:black;
+	overflow-x:hidden;
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
+}
+
+nav {
+    text-align:center;
+    margin:auto 0;
+	height:70px;
+}
+
+.navbar-fixed-bottom {
+	border-width:0px !important;
+}
+
+.nav-bg {
+	width: 110%;
+	position: absolute;
+	bottom: -200px;
+	left: -10px;
+	transform: rotate(6deg);
+	-webkit-transition:  300ms ease;
+    -moz-transition:  300ms ease;
+    -o-transition: 300ms ease;
+    transition:  300ms ease;
+/*
+	opacity: 0.95;
+    filter: alpha(opacity=95);
+*/
+}
+
+nav ul {
+	line-height:60px;
+	-webkit-transition:  300ms ease;
+    -moz-transition:  300ms ease;
+    -o-transition: 300ms ease;
+    transition:  300ms ease;
+}
+
+.content-hero {
+	display:none;
+    position:fixed;
+	z-index:-99;
+	top:350px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+	padding:0px;
+
+}
+
+.content-hero h2 {
+	text-align:center;
+
+}
+
+.gk-badge img {
+	display:none;
+	position:fixed;
+	z-index:-99;
+    top:100px;
+	left:75px;
+}
+
+.mobile-only {
+	display:none;
+}
+
+#gk-header {
+	position:fixed;
+	z-index: -999;
+}
+
+#gk-main-content {
+	margin-top:775px;
+	background:white;
+}
+
+.hero {
+	position:fixed;
+	width:100%;
+	top:0;
+	right:0;
+}
+
+h2 {
+	text-align:center;
+	font-size:5rem;
+}
+
+h2, h3, footer a {
+	font-family: "Cormorant Garamond", serif;
+}
+
+.bridegroom img {
+	width:250px;
+	height:auto;
+	box-shadow: 1px 1px 5px;
+	border: 10px white solid;
+
+}
+
+.groom img {
+	float:right;
+	display:block;
+	margin-left:10px;
+	margin-bottom:10px;
+/*	border-radius:10px 40px;*/
+}
+
+.groom h3 {
+	text-align:right;
+}
+
+.bride img {
+	float:left;
+	display:block;
+	margin-right:10px;
+	margin-bottom:10px;
+/*	border-radius:40px 10px;*/
+}
+
+footer a {
+	color:black;
+	font-size:2.5rem;
+	-webkit-transition:  300ms ease;
+    -moz-transition:  300ms ease;
+    -o-transition: 300ms ease;
+    transition:  300ms ease;
+}
+
+footer a:hover {
+	text-decoration:none;
+	color:darkgray;
+}
+
+footer a:active {
+	color:darkgray;
+	text-decoration:none;
+}
+
+footer a:visited {
+	text-decoration:none;
+}
+
+.bios {
+	padding-bottom:60px;
+}
+
+.maps {
+	margin-top:-10px;
+/*	background: url("images/bokeh.jpg");*/
+}
+
+.registry {
+    position:relative;
+    display:block;
+	padding-bottom:100px;
+}
+
+.registry h2 {
+	text-shadow:0 0 20px white;
+	margin-bottom:40px;
+}
+
+.box {
+    background-color:rgba(240,240,240,.85);
+     height:200px;
+     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0   rgba(0,0,0,.12);
+     border-radius: 2px;
+}
+
+.vid {
+    position: absolute; 
+    top: 0; left:0;
+    width: 100%;
+    z-index: -1;
+}    
+
+video {
+	width:100%;
+}
+
+.knot {
+	margin-left:-15px;
+	height:1000px;
+}
+
+.knot img {
+	width:100%;
+}
+
+.maps iframe {
+	width:100%;
+	padding-bottom:100px;
+}
+
+.maps {
+	color:white;
+}
+
+.maps h2 {
+	text-shadow:2px 2px 8px black;
+	padding:40px 0 100px 0;
+}
+
+.maps p {
+	text-shadow:2px 2px 8px black;
+	font-size:2.2rem;
+}
+
+#gk-title {
+backface-visibility:hidden;
+perspective:1000;
+position:fixed;
+}
+
+@media screen and (max-width: 1300px) {
+	nav ul {
+		line-height:60px;
+	}
+	
+	.navbar-fixed-bottom {
+		height:45px;
+	}
+	
+	.content-hero {
+	top:300px;
+	}
+}
+
+@media screen and (max-width: 1108px) {
+	.navbar-fixed-bottom {
+		background:white;
+	}
+		.nav-bg {
+		display:none;
+	}
+	footer a {
+		font-size: 2rem;
+	}
+	#gk-main-content {
+	margin-top:625px;
+	}
+}
+
+@media screen and (max-width: 895px) {
+	footer a {
+		font-size:1.5rem;
+	}
+	.content-hero {
+	top:275px;
+	}
+	
+	.box {
+	margin-bottom:30px;	
+	}
+	
+	.box:last-child {
+	margin-bottom:0px;	
+	}
+}
+
+@media screen and (max-width: 815px) {
+	footer a {
+		font-size:1.49rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.groom h3 {
+	text-align:left;
+}
+	.knot {
+		margin-top:365px;
+		height:240px;
+	}
+	
+	nav li { padding: 0;}
+ 	nav li a { display: block; padding: 1em; }
+	
+	footer a {
+		font-size:2rem;
+	}
+	
+	#bios, #registry, #address, #maps {
+	padding-top:0;
+		margin-top:-15px;
+		
+}
+	.reg-content {
+			padding-bottom:50px;
+		}
+	
+	nav ul {
+		line-height:0;
+	}
+	
+	.navbar-fixed-bottom {
+		height:40px;
+	}
+	
+	footer a {
+		font-size: 2.5rem;
+	}
+	
+	.gk-badge img {
+    top:50px;
+	left:40px;
+	width:40%;
+}
+	
+	.content-hero {
+	top:200px;
+    left: 35px;
+    right: 0;
+}
+
+.content-hero h2 {
+	text-align:center;
+	font-size:3.2rem;
+}
+	
+	#gk-main-content {
+	margin-top:410px;
+	}
+}
+
+@media screen and (max-width:767px) {
+	body {
+		background:white;
+	}
+	.sz-desktop {
+		display:none;
+	}
+	
+	.mobile-only {
+		display:block;
+	}
+	
+	.bridegroom img {
+		width:100%;
+		display:block;
+		margin: 0 auto;
+}
+	
+	h2 {
+		font-size:3rem;
+	}
+	
+	.maps p {
+		font-size:1.9rem;
+	}
+	
+	.gk-badge img {
+    top:0;
+	left:0;
+	width:100%;
+		padding:25px;
+}
+	
+	.content-hero {
+		padding-bottom:10px;
+		top:672px;
+		left:0;
+		background: rgba(255,255,255, 0.8 );
+}
+
+.content-hero h2 {
+	line-height:15px;
+}
+	
+	#gk-main-content {
+	margin-top:605px;
+	}
+}
+
+@media screen and (min-width: 415px) {	
+	.mobile {
+		display:none;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.desktop {
+		display:none;
+	}
+	h2 {
+		font-size:3.2rem;
+	}
+	
+	.bios {
+		padding-top:20px;
+	}
+	.knot {
+		margin-top:320px;
+		height:150px;
+	}
+	
+	.bridegroom img {
+	width:100%;
+	height:auto;
+	padding:2px 2px 2px 2px;
+	margin-bottom:10px;
+}
+
+.groom img {
+	float:none;
+}
+
+.groom h3 {
+	text-align:left;
+}
+
+.bride img {
+	float:left;
+}
+	
+	.content-hero {
+		margin-top:-175px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#gk-main-content {
+	margin-top:550px;
+	}
+	
+		.content-hero {
+		top:620px;
+}
+}
+
+@media screen and (max-width: 320px) {
+	#gk-main-content {
+	margin-top:560px;
+	}
+	
+		.content-hero {
+		top:632px;
+}
+}
