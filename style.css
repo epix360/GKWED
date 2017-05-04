@@ -441,10 +441,10 @@ position:fixed;
 
 @media screen and (max-width: 320px) {
 	#gk-main-content {
-	margin-top:560px;
+	margin-top:480px;
 	}
 	
 		.content-hero {
-		top:632px;
+		top:550px;
 }
 }
