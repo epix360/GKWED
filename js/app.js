@@ -26,8 +26,12 @@ $(document).ready(function(){
 		
 		if ($(document).scrollTop() > 1500) {
 			$('#gk-header').hide();	
+			$('.gk-badge').hide();
+			$('.content-hero').hide();
 		} else {
 			$('#gk-header').show();	
+			$('.gk-badge').show();
+			$('.content-hero').show();
 		}
     });
 	
