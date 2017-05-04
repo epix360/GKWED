@@ -24,7 +24,7 @@ $(document).ready(function(){
 		$('nav ul').css('line-height', '60px');
     }
 		
-		if ($(document).scrollTop() > 1500) {
+		if ($(document).scrollTop() > 900) {
 			$('#gk-header').hide();	
 			$('.gk-badge').hide();
 			$('.content-hero').hide();
