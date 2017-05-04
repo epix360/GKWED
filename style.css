@@ -247,8 +247,27 @@ position:fixed;
 	footer a {
 		font-size: 2rem;
 	}
+	.gk-badge img {
+    top:60px;
+	left:40px;
+	width:40%;
+}
+	
+	.content-hero {
+	top:275px;
+    left: 30px;
+}
+
+.content-hero h2 {
+	text-align:center;
+	font-size:4rem;
+}
+	
 	#gk-main-content {
-	margin-top:625px;
+	margin-top:410px;
+	}
+	#gk-main-content {
+	margin-top:520px;
 	}
 }
 
@@ -301,7 +320,7 @@ position:fixed;
 		}
 	
 	nav ul {
-		line-height:0;
+		line-height:30px;
 	}
 	
 	.navbar-fixed-bottom {
@@ -309,7 +328,7 @@ position:fixed;
 	}
 	
 	footer a {
-		font-size: 2.5rem;
+		font-size: 1.44rem;
 	}
 	
 	.gk-badge img {
