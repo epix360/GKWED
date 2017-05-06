@@ -100,12 +100,39 @@ h2, h3, footer a {
 	font-family: "Cormorant Garamond", serif;
 }
 
+.name {
+	font-weight:bold;
+	font-size:2rem;
+}
+
+figcaption {
+	position:absolute;
+	font-size:5rem;
+    font-family: 'Reenie Beanie', sans-serif;
+}
+
+.groom figcaption {
+	bottom:78px;
+	right:65px;
+	-webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+.bride figcaption {
+	bottom:94px;
+	left:50px;
+	-webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+	transform: rotate(5deg);
+}
+
 .bridegroom img {
-	width:250px;
+	width:300px;
 	height:auto;
 	box-shadow: 1px 1px 5px;
-	border: 10px white solid;
-
+	border: white solid;
+	border-width:12px 12px 50px 12px;
 }
 
 .groom img {
@@ -113,7 +140,17 @@ h2, h3, footer a {
 	display:block;
 	margin-left:10px;
 	margin-bottom:10px;
+	-webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+	 position: relative;
+	top:-2px;
+	left:8px;
 /*	border-radius:10px 40px;*/
+}
+
+.groom img {
+	content: "Glen";
 }
 
 .groom h3 {
@@ -125,6 +162,12 @@ h2, h3, footer a {
 	display:block;
 	margin-right:10px;
 	margin-bottom:10px;
+	-webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+	transform: rotate(4deg);
+	position: relative;
+	top:3px;
+	left:-15px;
 /*	border-radius:40px 10px;*/
 }
 
@@ -237,6 +280,16 @@ position:fixed;
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	.groom figcaption {
+	bottom:188px;
+}
+
+.bride figcaption {
+	bottom:200px;
+}
+}
+
 @media screen and (max-width: 1108px) {
 	.navbar-fixed-bottom {
 		background:white;
@@ -269,6 +322,16 @@ position:fixed;
 	#gk-main-content {
 	margin-top:520px;
 	}
+}
+
+@media screen and (max-width:990px) {
+	.groom figcaption {
+	bottom:-60px;
+}
+
+.bride figcaption {
+	bottom:0;
+}
 }
 
 @media screen and (max-width: 895px) {
@@ -433,19 +496,35 @@ position:fixed;
 
 .groom img {
 	float:none;
+	margin-right:20px;
 }
 
 .groom h3 {
 	text-align:left;
 }
+	
+.bridegroom img {
+	width:92%;
+	}
 
 .bride img {
 	float:left;
+	margin-left:30px;
 }
 	
 	.content-hero {
 		margin-top:-175px;
 	}
+	
+	.groom figcaption {
+	bottom:330px;
+	right:110px;
+}
+
+.bride figcaption {
+	bottom: 322px;
+    left: 90px;
+}
 }
 
 @media screen and (max-width: 375px) {
@@ -456,6 +535,14 @@ position:fixed;
 		.content-hero {
 		top:620px;
 }
+	.groom figcaption {
+	bottom:345px;
+	right:100px;
+}
+
+.bride figcaption {
+	bottom: 362px;
+}
 }
 
 @media screen and (max-width: 320px) {
@@ -465,5 +552,15 @@ position:fixed;
 	
 		.content-hero {
 		top:545px;
+}
+	
+	.groom figcaption {
+	bottom:428px;
+	right:70px;
+}
+
+.bride figcaption {
+	bottom: 442px;
+    left: 70px;
 }
 }

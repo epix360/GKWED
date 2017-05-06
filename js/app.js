@@ -6,8 +6,8 @@ $(document).ready(function(){
 	
 	$('.sz-mobile').hide();
 	
-	$('.gk-badge img').fadeIn('800', 'linear');
-	$('.content-hero').fadeIn('800','linear');
+	$('.gk-badge img').fadeIn(800);
+	$('.content-hero').fadeIn(800);
 	
 	$(window).on('scroll resize', function() {   
 
