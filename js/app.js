@@ -33,6 +33,12 @@ $(document).ready(function(){
 			$('.gk-badge').show();
 			$('.content-hero').show();
 		}
+		
+		if ($(document).scrollTop() > 3480) {
+			$('.end').fadeIn('slow');
+		} else {
+			$('.end').fadeOut('fast');
+		}
     });
 	
 //fade
