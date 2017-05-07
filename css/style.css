@@ -50,8 +50,7 @@ nav ul {
     position:fixed;
 	z-index:-99;
 	top:350px;
-    left: 0;
-    right: 0;
+    left: 120px;
     margin: 0 auto;
 	padding:0px;
 
@@ -261,6 +260,12 @@ backface-visibility:hidden;
 perspective:1000;
 position:fixed;
 }
+	
+	@media screen and (max-width:1330px) {
+		#gk-main-content {
+		margin-top:660px;
+	}
+}
 
 @media screen and (max-width: 1300px) {
 	nav ul {
@@ -272,7 +277,13 @@ position:fixed;
 	}
 	
 	.content-hero {
-	top:300px;
+	top:350px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	#gk-main-content {
+		margin-top:550px;
 	}
 }
 
@@ -304,7 +315,7 @@ position:fixed;
 	
 	.content-hero {
 	top:275px;
-    left: 30px;
+    left: 90px;
 }
 
 .content-hero h2 {
@@ -315,8 +326,19 @@ position:fixed;
 	#gk-main-content {
 	margin-top:410px;
 	}
+}
+
+@media screen and (max-width:1010px) {
 	#gk-main-content {
-	margin-top:520px;
+	margin-top:380px;
+	}
+	
+	.content-hero {
+		margin-top: -25px;
+	}
+	
+	.content-hero h2 {
+		font-size:3rem;
 	}
 }
 
