@@ -11,19 +11,6 @@ $(document).ready(function(){
 	
 	$(window).on('scroll resize', function() {   
 
-        if (winWidth <= 1279)
-            return;
-
-		if ($(document).scrollTop() > 1) {
-	    $('.nav-bg').css('bottom', '-220px');
-	    $('footer a').css('font-size', '2rem');
-	    $('nav ul').css('line-height', '80px');
-    } else {
-		$('.nav-bg').css('bottom', '-200px');
-		$('footer a').css('font-size', '2.5rem');
-		$('nav ul').css('line-height', '60px');
-    }
-		
 		if ($(document).scrollTop() > 900) {
 			$('#gk-header').hide();	
 			$('.gk-badge').hide();
@@ -39,6 +26,21 @@ $(document).ready(function(){
 		} else {
 			$('.end').fadeOut('fast');
 		}
+		
+        if (winWidth <= 1279)
+            return;
+
+		if ($(document).scrollTop() > 1) {
+	    $('.nav-bg').css('bottom', '-220px');
+	    $('footer a').css('font-size', '2rem');
+	    $('nav ul').css('line-height', '80px');
+    } else {
+		$('.nav-bg').css('bottom', '-200px');
+		$('footer a').css('font-size', '2.5rem');
+		$('nav ul').css('line-height', '60px');
+    }
+		
+		
     });
 	
 //fade
@@ -59,24 +61,24 @@ $(document).scroll(function(e){
 	}
 });
 	
-$(function() {
-var target = $('.content-hero');
-var targetHeight = target.outerHeight();
-
-$(document).scroll(function(e){
-    var scrollPercent = ((targetHeight + 150) - window.scrollY) / targetHeight;
-    if(scrollPercent >= 0){
-        target.css('opacity', scrollPercent);
-    }
-	});	
-});
+//$(function() {
+//var target = $('.content-hero');
+//var targetHeight = target.outerHeight();
+//
+//$(document).scroll(function(e){
+//    var scrollPercent = ((targetHeight + 150) - window.scrollY) / targetHeight;
+//    if(scrollPercent >= 0){
+//        target.css('opacity', scrollPercent);
+//    }
+//	});	
+//});
 	
 $(function() {
 var target = $('.hero');
 var targetHeight = target.outerHeight();
 
 $(document).scroll(function(e){
-    var scrollPercent = ((targetHeight + 150) - window.scrollY) / targetHeight;
+    var scrollPercent = ((targetHeight + 50) - window.scrollY) / targetHeight;
     if(scrollPercent >= 0){
         target.css('opacity', scrollPercent);
     }
