@@ -166,11 +166,35 @@ figcaption {
 /*	border-radius:40px 10px;*/
 }
 
+.couple-pic {
+	display:block;
+	margin-top:25px;
+	width:90%;
+	height:auto;
+	box-shadow: 1px 1px 5px;
+	border: white solid;
+	border-width:12px 12px 50px 12px;
+	-webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+	transform: rotate(-4deg);
+}
+
+.couple-pic-mobile {
+	display:none;
+	width:90%;
+	box-shadow: 1px 1px 5px;
+	border: white solid;
+	border-width:12px 12px 50px 12px;
+	-webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+	transform: rotate(-4deg);
+}
+
 img.hr {
 	display:block;
 	margin:0 auto;
-	padding-top:25px;
-	padding-bottom:0;
+	padding-top:20px;
+	padding-bottom:15px;
 }
 
 footer a {
@@ -495,6 +519,17 @@ position:fixed;
 		display:block;
 		margin: 0 auto;
 }
+	
+	.couple-pic {
+		display:none;
+	}
+	
+	.couple-pic-mobile {
+		display:block;
+		margin:0 auto;
+		margin-top:25px;
+		margin-bottom:25px;
+	}
 	
 	h2 {
 		font-size:3rem;
