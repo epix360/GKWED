@@ -21,7 +21,7 @@ $(document).ready(function(){
 			$('.content-hero').show();
 		}
 		
-		if ($(document).scrollTop() > 3500) {
+		if ($(document).scrollTop() > 4300) {
 			$('.end').fadeIn('slow');
 		} else {
 			$('.end').fadeOut('fast');
