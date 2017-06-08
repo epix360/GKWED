@@ -6,6 +6,8 @@ $(document).ready(function(){
 	
 	$('.sz-mobile').hide();
 	
+	$('.site-credit').hide();
+	
 	$('.gk-badge img').fadeIn(800);
 	$('.content-hero').fadeIn(800);
 	
@@ -84,6 +86,16 @@ $(document).scroll(function(e){
     }
 	});	
 });	
+	
+//Reveal .site-credit when scroll reaches bottom of page
+	$(window).scroll(function(){ 
+		if ($(window).scrollTop() == ($(document).height() - $(window).height())	
+		) {
+			$('.site-credit').slideDown();
+		} else {
+			$('.site-credit').slideUp();
+		}
+});
 }); 
 
 //Smooth scrolling

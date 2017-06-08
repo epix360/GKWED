@@ -297,6 +297,7 @@ position:fixed;
 }
 
 .end {
+	mix-blend-mode: screen;
 	display:none;
 	position:fixed;
 	right:0;
@@ -304,14 +305,26 @@ position:fixed;
 	padding-right:50px;
 	top:200px;
 	z-index:-100;
-	background: -webkit-linear-gradient(to left, rgba(240,240,240,.8) , rgba(0, 0, 0, 0));
-	background:    -moz-linear-gradient(to left, rgba(240,240,240,.8) , rgba(0, 0, 0, 0));
-	background:      -o-linear-gradient(to left, rgba(240,240,240,.8) , rgba(0, 0, 0, 0));
-	background:         linear-gradient(to left, rgba(240,240,240,.8) , rgba(0, 0, 0, 0));
+	background: -webkit-linear-gradient(to left, rgba(240,240,240,1) , rgba(0, 0, 0, 0));
+	background:    -moz-linear-gradient(to left, rgba(240,240,240,1) , rgba(0, 0, 0, 0));
+	background:      -o-linear-gradient(to left, rgba(240,240,240,1) , rgba(0, 0, 0, 0));
+	background:         linear-gradient(to left, rgba(240,240,240,1) , rgba(0, 0, 0, 0));
 }
 
 .end h2 {
+	color:black;
 	font-size:8rem;
+	
+}
+
+.site-credit {
+	font-size:1.2em;
+	background-color:#cfd3d5;
+	padding:8px 15px 8px 15px;
+	position:fixed;
+	left:45px;
+	border-radius:0 0 7px 7px;
+	top:0;
 }
 	
 	@media screen and (max-width:1330px) {
