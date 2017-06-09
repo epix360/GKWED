@@ -99,6 +99,10 @@ h2, h3, footer a {
 	font-family: "Cormorant Garamond", serif;
 }
 
+h3 {
+	text-align:center;
+}
+
 .name {
 	font-weight:bold;
 	font-size:2rem;
