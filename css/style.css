@@ -99,7 +99,7 @@ h2, h3, footer a {
 	font-family: "Cormorant Garamond", serif;
 }
 
-h3 {
+.content-hero h3 {
 	text-align:center;
 	font-size:3.5rem;
 	color:navy;
@@ -403,6 +403,12 @@ position:fixed;
 	}
 }
 
+@media screen and (max-width: 1108px) {
+	.content-hero {
+	top:245px;
+}
+}
+
 @media screen and (max-width:1010px) {
 	#gk-main-content {
 	margin-top:380px;
@@ -551,9 +557,13 @@ position:fixed;
 	}
 	
 	h2 {
-		font-size:3rem;
+		font-size:2.9rem;
 	}
 	
+	
+	.content-hero h3 {
+		font-size:2.8rem;
+	}
 	.maps p {
 		font-size:1.9rem;
 	}
@@ -563,19 +573,28 @@ position:fixed;
 	left:0;
 	width:100%;
 		padding:25px;
+		margin-top:-15px;
 }
+	
+	.hero {
+		margin-top:-40px;
+	}
 	
 	.content-hero {
 		padding-bottom:10px;
-		top:672px;
+		top:600px;
     left: 0;
     right: 0;
-		background: rgba(255,255,255, 0.8 );
 }
 
 .content-hero h2 {
-	line-height:15px;
+	line-height:10px;
 }
+	
+	.content-hero h2, .content-hero h3 {
+		color:white;
+		text-shadow: 2px 2px 5px black;
+	}
 	
 	#gk-main-content {
 	margin-top:605px;
@@ -596,9 +615,6 @@ position:fixed;
 		font-size:3.2rem;
 	}
 	
-	.bios {
-		padding-top:20px;
-	}
 	.knot {
 		margin-top:320px;
 		height:150px;
@@ -656,7 +672,7 @@ position:fixed;
 	}
 	
 	.content-hero {
-		top:620px;
+		top:540px;
 }
 	.groom figcaption {
 	bottom:310px;
@@ -674,8 +690,18 @@ position:fixed;
 	}
 	
 		.content-hero {
-		top:545px;
+		top:480px;
 }
+	
+	.content-hero h2 {
+		font-size:2.4rem;
+		line-height:5px;
+	}
+	
+	.content-hero h3 {
+		font-size:2.2rem;
+		line-height:8px;
+	}
 	
 	.groom figcaption {
 	bottom:390px;
