@@ -5,6 +5,37 @@
 body {
 	background:black;
 	overflow-x:hidden;
+	position:relative;
+	z-index:-10000;
+}
+
+.btn-hash {
+	margin:-15px;
+	padding:0;
+	background:none;
+	border:none;
+}
+
+.btn-hash:hover {
+	background:none;
+	border:none;
+	color:darkgrey;
+}
+
+.btn-hash:active {
+	background:none !important;
+	border:none;
+	box-shadow:none;
+}
+
+.btn-hash:visited {
+	background:none;
+	border:none;
+}
+
+.btn-hash:focus {
+	background:none;
+	border:none;
 }
 
 p {
@@ -26,7 +57,7 @@ nav {
 	position: absolute;
 	bottom: -200px;
 	left: -10px;
-	transform: rotate(6deg);
+	transform: rotate(-1deg);
 	-webkit-transition:  300ms ease;
        -moz-transition:  300ms ease;
          -o-transition:  300ms ease;
@@ -48,17 +79,15 @@ nav ul {
 .content-hero {
 	display:none;
     position:fixed;
-	z-index:-101;
 	top:350px;
     left: 120px;
     margin: 0 auto;
 	padding:0px;
-
+	z-index:-101;
 }
 
 .content-hero h2 {
 	text-align:center;
-
 }
 
 .gk-badge img {
@@ -674,6 +703,17 @@ position:fixed;
 	.content-hero {
 		top:540px;
 }
+	.groom figcaption {
+	bottom:310px;
+	right:100px;
+}
+
+.bride figcaption {
+	bottom: 300px;
+}
+}
+
+@media screen and (max-width: 360px) {
 	.groom figcaption {
 	bottom:310px;
 	right:100px;

@@ -12,12 +12,12 @@
 <meta name="Robots" content="index, follow">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Glen and Kena are getting married!">
-<meta property="og:description" content="Glen and Kena are getting married! Find out all you need to know about the couple and their wedding festivities here.">
+<meta property="og:description" content="Glen and Kena are getting married! Find out all you need to know about the couple and their wedding festivities here. Use the hashtag #maglena2017.">
 <meta property="og:url" content="https://maglena.com">
 <meta property="og:image" content="images/engage-05.jpg">
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/style.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans|Reenie+Beanie" rel="stylesheet"> 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn"t work if you view the page via file:// -->
@@ -38,6 +38,27 @@
 </script>
 </head>
 <body>
+<div class="container-fluid">
+<div class="row">
+<div class="modal-hashtag">
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Let's Make Memories!</h4>
+      </div>
+      <div class="modal-body">
+		  Tag your Facebook and Instagram posts with the hashtag <strong>#maglena2017</strong> to add your memories to our custom wedding feed! <a href="/social">Posts will be aggregated here.</a>
+      </div>
+    </div>
+  </div>
+</div>
+	</div>
+	</div>
+	</div>
     <div class="container-fluid">
           <div class="row">
 			  <div id="to-top"></div>
@@ -48,13 +69,18 @@
             </div>
             
 <div class="content-hero">
-			<div class="">
+			<div class="text-center">
 				<h2 style="line-height:20px;">September 9, 2017</h2>
 				<h2>Logan Utah Temple</h2>
-				<h3>#maglena2017</h3>
+          <!-- Button trigger modal -->
+           <button type="button" class="btn btn-primary btn-lg btn-hash" data-toggle="modal" data-target="#myModal">
+	<h3>#maglena2017</h3>
+</button>
+	</div>
            </div>
-           </div>
+
         
+
       <div id="gk-header">
 		  <img class="hero sz-desktop" src="images/engage-04.jpg" alt="Glen and Kena">
 		  <img class="hero mobile-only" src="images/engage-04-mobile.jpg" alt="Glen and Kena">
@@ -163,7 +189,7 @@
         <footer>
         <div class="container-fluid">
 <nav class="navbar navbar-fixed-bottom sz-desktop">
-               <img class="nav-bg" src="images/paper-edge.png" alt="" />
+               <img class="nav-bg" src="images/paper-edge-copy.png" alt="" />
                 <ul class="list-inline">
                     <li class="col-xs-12 col-sm-2 col-sm-push-1"><a href="#bios">Bride & Groom</a></li>
                     <li class="col-xs-12 col-sm-2 col-sm-push-1"><a href="#registry">Registry</a></li>
@@ -185,7 +211,7 @@
 <script src="js/jquery-1.11.3.slim.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<script src="js/app.min.js"></script>
+<script src="js/app.js"></script>
 <script src="js/parallax.min.js"></script>
 </body>
 </html>

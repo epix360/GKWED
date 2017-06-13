@@ -53,7 +53,7 @@ var target = $('.gk-badge img');
 var targetHeight = target.outerHeight();
 
 $(document).scroll(function(e){
-    var scrollPercent = (targetHeight - window.scrollY + 150) / targetHeight;
+    var scrollPercent = (targetHeight - window.scrollY + 50) / targetHeight;
     if(scrollPercent >= 0){
         target.css('opacity', scrollPercent);
     }
@@ -63,24 +63,24 @@ $(document).scroll(function(e){
 	}
 });
 	
-//$(function() {
-//var target = $('.content-hero');
-//var targetHeight = target.outerHeight();
-//
-//$(document).scroll(function(e){
-//    var scrollPercent = ((targetHeight + 150) - window.scrollY) / targetHeight;
-//    if(scrollPercent >= 0){
-//        target.css('opacity', scrollPercent);
-//    }
-//	});	
-//});
-	
 $(function() {
 var target = $('.hero');
 var targetHeight = target.outerHeight();
 
 $(document).scroll(function(e){
     var scrollPercent = ((targetHeight + 50) - window.scrollY) / targetHeight;
+    if(scrollPercent >= 0){
+        target.css('opacity', scrollPercent);
+    }
+	});	
+});	
+	
+	$(function() {
+var target = $('.content-hero');
+var targetHeight = target.outerHeight();
+
+$(document).scroll(function(e){
+    var scrollPercent = ((targetHeight + 150) - window.scrollY) / targetHeight;
     if(scrollPercent >= 0){
         target.css('opacity', scrollPercent);
     }
