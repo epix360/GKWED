@@ -47,16 +47,6 @@
 <!-- Place <div> tag where you want the feed to appear -->
 <div id="curator-feed-default"></div>
 
-<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
-<script type="text/javascript">
-// curator-feed-default
-(function(){
-    var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
-    i.src = "https://cdn.curator.io/published/98f6360f-80c1-4973-aab6-e221ad05.js";
-    e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-})();
-</script>
-
 <!--walls.io-->
 <!--<script id="wallsio-widget-script" src="https://walls.io/js/wallsio-widget.js" data-wallurl="https://walls.io/7Bqm7UD0P?nobackground=1&amp;hide_header=1" data-width="100%" data-autoheight="1" data-height="800"></script>-->
 
@@ -73,6 +63,14 @@
 			background:white;
 		}
 	</style>
+	<script type="text/javascript">
+// curator-feed-default
+(function(){
+    var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+    i.src = "https://cdn.curator.io/published/98f6360f-80c1-4973-aab6-e221ad05.js";
+    e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+})();
+</script>
 <script src="js/jquery-1.11.3.slim.min.js"></script>
 </body>
 </html>
